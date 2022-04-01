@@ -15,10 +15,11 @@ function replaceNumber(element) {
   splitArray.forEach(function(element) {
   if (element.includes('1')) {
     replacedArray.push('beep');
-  } else if (element.includes (2)) { 
-    replacedArray.push("boop");
-  }
-  else { 
+  } else if (element.includes ('2')) { 
+    replacedArray.push('boop');
+  } else if (element.includes ('3')) { 
+    replacedArray.push("won't you be my neibor");
+  } else { 
   replacedArray.push(element);
 }
 });
