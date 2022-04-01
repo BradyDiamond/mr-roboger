@@ -1,32 +1,27 @@
 //Business logic
 
 function inputNumber(number) {
-  const newArray= []
+  const newArray= [];
   for (let i=0; i<= number ; i++) {
   newArray.push(i);
   }
-  return (newArray)
+  let strArray = newArray.toString();
+  const splitArray = strArray.split();
+  return splitArray;
 }
-
-function replaceNumber(number)
-let replacedArray = inputNumber() {
-replacedArray.forEach(function(element) {
-  if (inputNumber.includes("1")) {
-      replacedArray.push("beep");
-  // } else if (rank >= 2000) {
-  //     newArray.push('mid');
-  // } else {
-  //     newArray.push('junior');
-  // }
+function replaceNumber(number) {
+  splitArray = (number)
+  const replacedArray = [];
+  splitArray.forEach(element.includes('1')) {
+    replacedArray.push ('beep');
+  }
+  return replacedArray;
 }
-
-console.log(newArray);
-
 
 // if (number.includes(1)) {
 //   newArray.push("beep");
 // }
-// replaceNumber(12)
+// replaceNumber()
 // }
 
 
