@@ -10,12 +10,18 @@ function inputNumber(element) {
   return splitArray;
 }
 function replaceNumber(element) {
-  const splitArray = inputNumber(element);
   const replacedArray = [];
+  const splitArray = inputNumber(element);
   splitArray.forEach(function(element) {
-  if (splitArray.includes('1')); {
-    replacedArray.push ('beep');
+  if (element.includes('1')) {
+    replacedArray.push('beep');
+  } else if (element.includes (2)) { 
+    replacedArray.push("boop");
   }
+  else { 
+  replacedArray.push(element);
+}
+});
   return replacedArray;
 }
 
