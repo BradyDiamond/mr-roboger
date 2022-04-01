@@ -1,6 +1,6 @@
-function noInputtedNuber(text) {
-  return ((text.trim().length === 0) || (word.trim().length === 0));
-}
+// function noInputtedNumber(text) {
+//   return ((text.trim().length === 0) || (word.trim().length === 0));
+// }
 
 
 
@@ -41,9 +41,9 @@ function replaceNumber(element) {
 $(document).ready(function() {
   $('form#input').submit(function(event) {
     event.preventDefault();
-    let input = $(inputNumber);
+    const input = $('#num').val();
     const output = $(replaceNumber);
-    const result= 
+    const result= output
     $('#output').text(result);
     
   });
