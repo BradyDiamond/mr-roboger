@@ -1,4 +1,4 @@
-function noInputtedNuber(word, text) {
+function noInputtedNuber(text) {
   return ((text.trim().length === 0) || (word.trim().length === 0));
 }
 
@@ -38,12 +38,13 @@ function replaceNumber(element) {
 
 
 
-$(document).ready(function(){
-  $("form#input").submit(function(event) {
+$(document).ready(function() {
+  $('form#input').submit(function(event) {
     event.preventDefault();
-    const replacedNumber = replaceNumber
-    let num = $("#number")
-    $("#output").text(replacedArray);
+    let input = $(inputNumber);
+    const output = $(replaceNumber);
+    const result= 
+    $('#output').text(result);
     
   });
 });
