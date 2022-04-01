@@ -41,8 +41,9 @@ function replaceNumber(element) {
 $(document).ready(function(){
   $("form#input").submit(function(event) {
     event.preventDefault();
+    const replacedNumber = replaceNumber
     let num = $("#number")
-    $("#output").text(replacedArray(num));
+    $("#output").text(replacedArray);
     
   });
 });
