@@ -1,18 +1,19 @@
 //Business logic
 
-function inputNumber(number) {
+function inputNumber(element) {
   const newArray= [];
-  for (let i=0; i<= number ; i++) {
+  for (let i=0; i<= element ; i++) {
   newArray.push(i);
   }
   let strArray = newArray.toString();
-  const splitArray = strArray.split();
+  const splitArray = strArray.split(",");
   return splitArray;
 }
-function replaceNumber(number) {
-  splitArray = (number)
+function replaceNumber(element) {
+  const splitArray = inputNumber(element);
   const replacedArray = [];
-  splitArray.forEach(element.includes('1')) {
+  splitArray.forEach(function(element) {
+  if (splitArray.includes('1')); {
     replacedArray.push ('beep');
   }
   return replacedArray;
