@@ -5,14 +5,14 @@ function inputNumber(number) {
   for (let i=0; i<= number ; i++) {
   newArray.push(i);
   }
-  return(newArray)
+  return (newArray)
 }
 
 function replaceNumber(number)
-const newArray = number.split('')
-newArray.forEach(function(number) {
-  if (number.includes(1)) {
-      newArray.push("beep");
+let replacedArray = inputNumber() {
+replacedArray.forEach(function(element) {
+  if (inputNumber.includes("1")) {
+      replacedArray.push("beep");
   // } else if (rank >= 2000) {
   //     newArray.push('mid');
   // } else {
