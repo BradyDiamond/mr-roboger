@@ -1,4 +1,4 @@
-function noInputtedWord(word, text) {
+function noInputtedNuber(word, text) {
   return ((text.trim().length === 0) || (word.trim().length === 0));
 }
 
@@ -39,13 +39,10 @@ function replaceNumber(element) {
 
 
 $(document).ready(function(){
-  $("form#robotner").submit(function(event){
+  $("form#input").submit(function(event) {
     event.preventDefault();
-    const passage = $("#text-passage").val();
-    const word = $("#word").val();
-    const number = replaceNumber(passage);
-    const occurrencesOfWord = numberOfOccurrencesInText(word, passage);
-    $("#your-number").text(replacedArray);
+    let num = $("#number")
+    $("#output").text(replacedArray(num));
     
   });
 });
