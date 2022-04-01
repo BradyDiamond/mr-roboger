@@ -1,24 +1,16 @@
 //Business logic
 
-function beepBoop(number) {
-  let newArray= []
-  for each (let i=0; <= number ;i++) {
-cosole.log(i);
+function inputNumber(number) {
+  const newArray= []
+  for (let i=0; i<= number ; i++) {
+  newArray.push(i);
   }
+  return(newArray)
 }
-
-
-
-
 
 
 //continue to log tests
 
-
-
-
-
-   
 
 
 
