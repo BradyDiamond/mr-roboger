@@ -41,10 +41,13 @@ function replaceNumber(element) {
 $(document).ready(function() {
   $('form#input').submit(function(event) {
     event.preventDefault();
-    const input = $('#num').val();
-    const output = $(replaceNumber);
-    const result= output
-    $('#output').text(result);
-    
+
+    const input= parseInt($('#num').val()); 
+    const results = replaceNumber(input);
+    for (let i=0; i < results.length; i++) {
+      $("#output").append(results[i] + "<br>")
+    }
+ 
+  // $("#output").append(results.join('\n'));
   });
 });
